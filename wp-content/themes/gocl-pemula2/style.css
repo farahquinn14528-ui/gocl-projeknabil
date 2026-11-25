@@ -1,0 +1,74 @@
+/*
+Theme Name: GOCL Pemula 2
+Description: Versi pendek tema GOCL: satu template, CSS padat.
+Version: 2.0
+*/
+
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.6 Arial, Helvetica, sans-serif; color: #333; background: #fff; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: #1c6bb0; }
+a:hover { color: #0f4c81; }
+h1, h2, h3 { font-family: "Times New Roman", Times, serif; color: #222; line-height: 1.25; margin: 0 0 12px; }
+h1 { font-size: clamp(26px, 5vw, 36px); }
+h2 { font-size: 26px; }
+h3 { font-size: 20px; }
+p { margin: 0 0 14px; }
+.wrap { max-width: 1100px; margin: auto; padding: 0 15px; }
+
+.topbar { background: #f2f2f2; border-bottom: 1px solid #ddd; font-size: 12px; text-align: right; padding: 6px 0; }
+.site-header { padding: 18px 0; text-align: center; }
+.site-header img { width: 150px; margin: auto; }
+
+.site-nav { background: #f7f7f7; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; text-align: center; }
+.site-nav a { display: inline-block; padding: 12px 16px; font-size: 13px; font-weight: bold; text-transform: uppercase; text-decoration: none; }
+.site-nav a:hover { background: #e8eef5; }
+.site-nav .on { background: #1c6bb0; color: #fff; }
+
+.btn { display: inline-block; background: #1c6bb0; color: #fff; padding: 12px 24px; border-radius: 2px; font-size: 14px; font-weight: bold; text-decoration: none; }
+.btn:hover { background: #155a95; color: #fff; }
+.btn-light { background: #fff; color: #1c6bb0; }
+.btn-light:hover { background: #e8eef5; color: #1c6bb0; }
+
+.hero { min-height: 420px; padding: 80px 0; background-size: cover; background-position: center; display: flex; align-items: center; text-align: center; color: #fff; }
+.hero h1 { color: #fff; font-size: clamp(26px, 5vw, 44px); }
+.hero p { font-size: 18px; max-width: 700px; margin: 0 auto 20px; }
+
+.section { padding: 40px 0; }
+.section-alt { background: #f7f7f7; }
+.section-title { border-bottom: 2px solid #1c6bb0; padding-bottom: 8px; margin-bottom: 24px; }
+
+.grid, .client-grid, .portfolio-grid, .info-grid, .footer-cols { display: grid; gap: 20px; }
+.grid, .info-grid, .footer-cols { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.client-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+.client-grid img { height: 90px; object-fit: contain; background: #fff; border: 1px solid #ddd; padding: 10px; }
+.portfolio-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.portfolio-grid img { height: 180px; object-fit: cover; border: 1px solid #ddd; }
+
+.card, .info-box { border: 1px solid #ddd; background: #fff; padding: 12px; }
+.card img { width: 100%; height: 200px; object-fit: cover; margin-bottom: 10px; }
+.card .cat { font-size: 12px; color: #555; text-transform: uppercase; margin: 0 0 4px; }
+.card h3 { font-size: 18px; margin: 0; }
+.info-box p { margin: 0; font-size: 14px; }
+
+.value-list { list-style: none; padding: 0; margin: 0 0 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+.value-list li { border: 1px solid #1c6bb0; color: #1c6bb0; padding: 6px 14px; border-radius: 2px; font-size: 13px; font-weight: bold; }
+.team-img { margin-top: 20px; border: 1px solid #ddd; }
+
+.cta { background: #1c6bb0; color: #fff; padding: 40px 0; text-align: center; }
+.cta h2 { color: #fff; }
+.cta p { max-width: 700px; margin: 0 auto 20px; }
+
+.page-wrap { padding: 35px 0 0; }
+.page-title { margin: 0; }
+.entry h2 { margin-top: 28px; }
+.entry ul { padding-left: 22px; }
+
+.site-footer { background: #333; color: #ccc; padding: 36px 0 0; font-size: 14px; }
+.site-footer h3 { color: #fff; font-size: 16px; }
+.site-footer a { color: #ccc; text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; }
+.site-footer li { margin-bottom: 6px; }
+.footer-bottom { border-top: 1px solid #555; margin-top: 24px; padding: 14px 0; font-size: 13px; text-align: center; }
+.footer-bottom p { margin: 0; }

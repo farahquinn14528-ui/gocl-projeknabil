@@ -1,0 +1,14 @@
+# Konfigurasi lokal dan rahasia
+wp-config.php
+wp-content/debug.log
+.env
+*.pem
+*.key
+*.sql
+
+# Arsip sementara
+*.zip
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
