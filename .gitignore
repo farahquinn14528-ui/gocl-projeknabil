@@ -12,3 +12,6 @@ wp-content/debug.log
 # Sistem operasi
 .DS_Store
 Thumbs.db
+
+# Mockup brainstorming
+.superpowers/

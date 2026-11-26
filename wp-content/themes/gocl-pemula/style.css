@@ -36,22 +36,22 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: "Times New Roman", Times, serif;
+	font-family: Arial, Helvetica, sans-serif;
 	color: #222222;
-	line-height: 1.25;
+	line-height: 1.3;
 	margin: 0 0 12px;
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 34px;
 }
 
 h2 {
-	font-size: 28px;
+	font-size: 26px;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 19px;
 }
 
 p {
@@ -60,14 +60,14 @@ p {
 
 .wrap {
 	width: 100%;
-	max-width: 1100px;
+	max-width: 1120px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 /* Bar atas */
 .topbar {
-	background: #f2f2f2;
+	background: #f7f7f7;
 	border-bottom: 1px solid #dddddd;
 	font-size: 12px;
 	text-align: right;
@@ -80,7 +80,7 @@ p {
 
 /* Header */
 .site-header {
-	padding: 18px 0;
+	padding: 22px 0;
 	text-align: center;
 }
 
@@ -103,9 +103,9 @@ p {
 
 /* Menu */
 .site-nav {
-	background: #f7f7f7;
-	border-top: 1px solid #dddddd;
-	border-bottom: 1px solid #dddddd;
+	background: #ffffff;
+	border-top: 1px solid #e3e8ee;
+	border-bottom: 1px solid #e3e8ee;
 }
 
 .site-nav ul {
@@ -119,7 +119,7 @@ p {
 
 .site-nav a {
 	display: block;
-	padding: 12px 16px;
+	padding: 14px 18px;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -144,7 +144,7 @@ p {
 	text-decoration: none;
 	padding: 12px 24px;
 	border: 0;
-	border-radius: 2px;
+	border-radius: 4px;
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -192,11 +192,11 @@ p {
 
 /* Section */
 .section {
-	padding: 40px 0;
+	padding: 56px 0;
 }
 
 .section-alt {
-	background: #f7f7f7;
+	background: #f5f7fa;
 }
 
 .section-title {
@@ -224,7 +224,7 @@ p {
 .client-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-	gap: 12px;
+	gap: 16px;
 }
 
 .client-grid img {
@@ -232,14 +232,16 @@ p {
 	height: 90px;
 	object-fit: contain;
 	background: #ffffff;
-	border: 1px solid #dddddd;
-	padding: 10px;
+	border: 1px solid #e3e8ee;
+	border-radius: 4px;
+	padding: 12px;
 }
 
 /* Kartu produk */
 .card {
-	border: 1px solid #dddddd;
-	padding: 12px;
+	border: 1px solid #e3e8ee;
+	padding: 16px;
+	border-radius: 4px;
 	background: #ffffff;
 }
 
@@ -247,6 +249,7 @@ p {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
+	border-radius: 4px;
 	margin-bottom: 10px;
 }
 
@@ -286,20 +289,22 @@ p {
 .portfolio-grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 12px;
+	gap: 16px;
 }
 
 .portfolio-grid img {
 	width: 100%;
 	height: 180px;
 	object-fit: cover;
-	border: 1px solid #dddddd;
+	border: 1px solid #e3e8ee;
+	border-radius: 4px;
 }
 
 /* Foto tim dan tentang */
 .team-img {
 	margin-top: 20px;
-	border: 1px solid #dddddd;
+	border: 1px solid #e3e8ee;
+	border-radius: 4px;
 }
 
 /* CTA */
@@ -328,9 +333,10 @@ p {
 }
 
 .info-box {
-	border: 1px solid #dddddd;
+	border: 1px solid #e3e8ee;
 	background: #ffffff;
 	padding: 16px;
+	border-radius: 4px;
 }
 
 .info-box h3 {
@@ -403,13 +409,13 @@ p {
 .footer-cols {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 24px;
+	gap: 32px;
 }
 
 .footer-bottom {
-	border-top: 1px solid #555555;
-	margin-top: 24px;
-	padding: 14px 0;
+	border-top: 1px solid #4a4f55;
+	margin-top: 32px;
+	padding: 18px 0;
 	font-size: 13px;
 	text-align: center;
 }
