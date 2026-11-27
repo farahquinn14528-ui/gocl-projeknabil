@@ -49,4 +49,6 @@ Pilihan gaya: **Segar & terbuka** (dipilih). Dua alternatif lain, bersih-modern 
 - Gaya dan kotak gambar sudah disesuaikan di `style.css` tanpa menambah berkas baru.
 - Enam halaman lokal sudah dicek pada 1280×900 dan 390×844: tidak ada overflow horizontal, gambar termuat, ukuran gambar seragam.
 - GitHub sudah menerima perubahan ini di `main`.
-- Unggah ke hosting masih menunggu kredensial FTP/cPanel yang aktif.
+- Tautan yang mengikuti perubahan sudah live di `https://gocl-projeknabil.vercel.app`. Mirror statisnya memakai `style.css` yang sama dengan lokal dan berkas gambar ukuran penuh.
+- Enam halaman di URL tersebut terverifikasi HTTP 200 pada 1280×900 dan 390×844: tanpa overflow horizontal, console bersih, galeri tanpa thumbnail, ukuran gambar seragam.
+- Domain WordPress lama `https://projeknabil.latihanwebdesain.my.id/` belum berubah karena kredensial FTP/cPanel belum tersedia.

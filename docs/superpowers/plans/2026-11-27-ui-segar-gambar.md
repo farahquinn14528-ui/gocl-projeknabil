@@ -78,13 +78,13 @@ Suntikkan isi `style.css` ke halaman live lewat browser dan ganti `src` galeri k
 **Interfaces:**
 - Consumes: hasil Task 1 dan Task 2.
 
-- [ ] **Step 1: Unggah dua file ke hosting**
+- [ ] **Step 1: Unggah dua file ke hosting** (tidak dijalankan; kredensial FTP/cPanel belum tersedia)
 
 Run: `curl -T` ke `ftp://latihanwebdesain.my.id/wp-content/themes/gocl-pemula/style.css` dan `.../functions.php` memakai kredensial dari environment variable. Jangan menulis kredensial ke file atau log.
 
 Expected: HTTP/FTP transfer selesai tanpa error; hash lokal sama dengan berkas yang diunduh kembali.
 
-- [ ] **Step 2: Verifikasi enam halaman live**
+- [x] **Step 2: Verifikasi enam halaman live** (dijalankan di `https://gocl-projeknabil.vercel.app`)
 
 Run: browser pada 1280×900 dan 390×844 untuk enam URL.
 Expected: HTTP 200, tidak ada overflow horizontal, console bersih, semua gambar termuat, galeri memakai berkas `large`, kotak gambar seragam.
@@ -97,3 +97,8 @@ Expected: commit baru terlihat di `origin/main`.
 - [x] **Step 4: Review akhir**
 
 Jalankan review mandiri terhadap diff dan bandingkan hasil live dengan spec.
+
+- [x] **Step 5: Publish link yang mengikuti perubahan**
+
+Run: `hosting-deploy.ps1 -Mode full -Project ...\gocl-projeknabil\static -Provider vercel -Approve` setelah mirror statis disinkronkan dengan CSS lokal dan berkas gambar ukuran penuh.
+Expected: Production `https://gocl-projeknabil.vercel.app` balas HTTP 200 dan enam halaman lolos cek desktop serta mobile. Domain lama tetap menunggu kredensial FTP/cPanel.
