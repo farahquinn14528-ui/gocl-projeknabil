@@ -17,3 +17,9 @@ function gocl_assets() {
 	wp_enqueue_style( 'gocl-style', get_stylesheet_uri(), array(), filemtime( $file ) );
 }
 add_action( 'wp_enqueue_scripts', 'gocl_assets' );
+
+function gocl_gallery_size( $atts ) {
+	$atts['size'] = 'large';
+	return $atts;
+}
+add_filter( 'shortcode_atts_gallery', 'gocl_gallery_size' );
