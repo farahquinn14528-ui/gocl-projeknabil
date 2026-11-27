@@ -23,3 +23,9 @@ function gocl_gallery_size( $atts ) {
 	return $atts;
 }
 add_filter( 'shortcode_atts_gallery', 'gocl_gallery_size' );
+
+// Elementor menyimpan HTML galeri lama; paksa src ukuran penuh saat render.
+function gocl_gallery_cached_src( $html ) {
+	return preg_replace( '/(src="[^"]+\/wp-content\/uploads\/[^"]*?(?:klien|proyek)-[^"]+?)-\d+x\d+(?=\.(?:jpe?g|png|webp))/i', '$1', $html );
+}
+add_filter( 'the_content', 'gocl_gallery_cached_src' );

@@ -68,7 +68,7 @@ p {
 /* Bar atas */
 .topbar {
 	background: #147d76;
-	color: #e7f5f2;
+	color: #eaf7f4;
 	border-bottom: 1px solid #0f6660;
 	font-size: 12px;
 	text-align: right;
@@ -372,7 +372,7 @@ p {
 	height: 140px !important;
 	object-fit: contain;
 	background: #ffffff;
-	border: 1px solid #e1ece8;
+	border: 1px solid #e1ece8 !important;
 	border-radius: 14px;
 	padding: 12px;
 }

@@ -39,11 +39,11 @@
 **Interfaces:**
 - Produces: filter `shortcode_atts_gallery` yang mengembalikan `size = large` untuk semua galeri.
 
-- [ ] **Step 1: Tambah filter ukuran galeri**
+- [x] **Step 1: Tambah filter ukuran galeri**
 
 Tambahkan fungsi pendek setelah `gocl_assets()` yang menerima array `$out` dan mengembalikan `$out` dengan `$out['size'] = 'large'`, lalu daftarkan lewat `add_filter( 'shortcode_atts_gallery', ... )`.
 
-- [ ] **Step 2: Periksa sintaks PHP**
+- [x] **Step 2: Periksa sintaks PHP**
 
 Run: `php -l wp-content/themes/gocl-pemula/functions.php`
 Expected: `No syntax errors detected`.
@@ -57,15 +57,15 @@ Expected: `No syntax errors detected`.
 - Consumes: galeri sekarang memakai berkas `large` dari Task 1.
 - Produces: aturan CSS untuk header, menu, footer, konten Elementor, dan kotak gambar.
 
-- [ ] **Step 1: Perbarui deklarasi tema yang dipakai**
+- [x] **Step 1: Perbarui deklarasi tema yang dipakai**
 
 Ubah warna, radius, dan jarak pada `body`, `a`, `h1..h4`, `.topbar`, `.site-header`, `.site-logo`, `.site-nav`, `.btn`, `.page-wrap`, `.site-footer`, `.footer-bottom`, dan media query sesuai spec. Hapus blok `.grid*`, `.client-grid`, `.card`, `.value-list`, `.portfolio-grid`, `.team-img`, `.cta`, `.info-grid`, `.info-box`, `.section*`, `.hero`, `.section-title` yang tidak dipakai DOM.
 
-- [ ] **Step 2: Tambah override Elementor yang ringkas**
+- [x] **Step 2: Tambah override Elementor yang ringkas**
 
-Tambah blok di akhir file yang menargetkan `.elementor h1/h2/h3`, `.elementor .e-con.e-parent:nth-child(even)`, `.elementor-button`, `.elementor-widget-image-gallery .gallery-item img`, `.elementor-widget-image img`, dan `.page-id-6 .elementor-widget-image img`. Gambar galeri memakai `object-fit: contain` dalam kotak 140 px; gambar produk dan proyek memakai `object-fit: cover` dalam kotak tinggi seragam. Gunakan `!important` hanya pada deklarasi yang ditimpa Elementor.
+Tambah blok di akhir file yang menargetkan `.elementor h1/h2/h3`, `.elementor .e-con.e-parent:nth-child(even)`, `.elementor-button`, `.elementor-widget-image-gallery .gallery-item img`, `.elementor-widget-image img`, dan `.page-id-6 .elementor-widget-image img`. Gambar galeri memakai `object-fit: contain` dalam kotak 140 px; gambar produk dan proyek memakai `object-fit: cover` dalam kotak tinggi seragam. Gunakan `!important` hanya pada deklarasi yang ditimpa Elementor. `functions.php` juga menormalkan `src` galeri yang masih tersimpan sebagai thumbnail di cache Elementor.
 
-- [ ] **Step 3: Pratinjau tanpa menyentuh hosting**
+- [x] **Step 3: Pratinjau tanpa menyentuh hosting**
 
 Suntikkan isi `style.css` ke halaman live lewat browser dan ganti `src` galeri ke berkas full-size untuk simulasi filter. Cek computed style dan lebar dokumen di 1280×900 serta 390×844. Expected: tidak ada overflow, gambar tidak terpotong, tinggi gambar seragam.
 
@@ -89,11 +89,11 @@ Expected: HTTP/FTP transfer selesai tanpa error; hash lokal sama dengan berkas y
 Run: browser pada 1280×900 dan 390×844 untuk enam URL.
 Expected: HTTP 200, tidak ada overflow horizontal, console bersih, semua gambar termuat, galeri memakai berkas `large`, kotak gambar seragam.
 
-- [ ] **Step 3: Commit dan push**
+- [x] **Step 3: Commit dan push**
 
 Run: `git add` untuk dua file tema, spec, dan plan; `git commit`; `git push origin main`.
 Expected: commit baru terlihat di `origin/main`.
 
-- [ ] **Step 4: Review akhir**
+- [x] **Step 4: Review akhir**
 
 Jalankan review mandiri terhadap diff dan bandingkan hasil live dengan spec.

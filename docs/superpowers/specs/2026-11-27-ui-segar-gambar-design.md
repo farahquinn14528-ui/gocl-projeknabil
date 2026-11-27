@@ -13,7 +13,7 @@ Kamu minta tampilan dibuat lebih bagus, gambar dibetulkan, dan gaya diubah. Dari
 ## Non-goals
 
 - Mengganti teks, struktur halaman, atau susunan blok Elementor.
-- Menambah gambar baru. Semua文件 sudah ada di `wp-content/uploads/2026/11/`.
+- Menambah gambar baru. Semua berkas sudah ada di `wp-content/uploads/2026/11/`.
 - Mengubah warna biru utama `#1c6bb0` yang sudah dikenal sebagai warna GOCL.
 
 ## Constraints
@@ -34,18 +34,19 @@ Pilihan gaya: **Segar & terbuka** (dipilih). Dua alternatif lain, bersih-modern 
 ## Design yang disetujui
 
 - Warna utama `#1c6bb0` tetap dipakai untuk tautan, tombol, dan menu aktif.
-- Aksen baru hijau laut `#147d76` dipakai untuk logo teks, garis bawah judul bagian, dan gradasi hero.
+- Aksen baru hijau laut `#147d76` dipakai untuk logo teks, garis bawah judul bagian, dan latar bagian selang-seling.
 - Latar bagian selang-seling `#ffffff` dan `#eef8f5`. Border lembut `#e1ece8`.
 - Sudut kartu dan gambar 14 px, sudut tombol 10 px. Jarak bagian 64 px, lebar konten 1120 px.
-- Hero memakai gradasi `#147d76` ke `#1c6bb0`, teks putih, tinggi minimal 420 px.
+- Hero memakai gambar yang sudah ada, tinggi 420 px desktop dan 240 px mobile.
 - Footer memakai warna `#243c3a`, teks terang, border atas hijau laut.
 - Logo klien memakai ukuran `large` dan `object-fit: contain` dalam kotak 140 px, supaya sisi logo tidak terpotong.
 - Gambar proyek dan produk memakai kotak tinggi 180–200 px dengan `object-fit: cover`, supaya barisnya rapi.
 - Foto tim memakai kotak 320 px dengan `object-fit: cover`.
 
-## Yang tersisa untuk implementasi
+## Status implementasi
 
-- Tambah filter ukuran galeri di `functions.php`.
-- Sesuaikan deklarasi di `style.css` tanpa menambah file baru.
-- Cek enam halaman di lokal dan hosting pada 1280×900 serta 390×844, termasuk computed style gambar dan saturasi warna.
-- Unggah `style.css` dan `functions.php` yang berubah ke hosting, lalu commit dan push ke GitHub.
+- Filter ukuran galeri dan perbaikan `src` galeri yang tersimpan di cache Elementor ada di `functions.php`.
+- Gaya dan kotak gambar sudah disesuaikan di `style.css` tanpa menambah berkas baru.
+- Enam halaman lokal sudah dicek pada 1280×900 dan 390×844: tidak ada overflow horizontal, gambar termuat, ukuran gambar seragam.
+- GitHub sudah menerima perubahan ini di `main`.
+- Unggah ke hosting masih menunggu kredensial FTP/cPanel yang aktif.
